@@ -27,8 +27,8 @@ resource "aws_iam_role" "gha_eks_deploy_role" {
             "token.actions.githubusercontent.com:aud": "sts.amazonaws.com"
           }
           StringLike = {
-            # Updated to point to the current repository: express-t2s-app-v4
-            "token.actions.githubusercontent.com:sub": "repo:Here2ServeU/express-t2s-app-v4:*"
+            # Updated to point to the current repository: express-t2s-app-v3
+            "token.actions.githubusercontent.com:sub": "repo:eduala09/express-t2s-app-v3:*"
           }
         }
       }
